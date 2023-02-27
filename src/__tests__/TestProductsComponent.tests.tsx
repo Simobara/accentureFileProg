@@ -4,13 +4,13 @@ import Products from "../components/Products";
 import data from "../controller/data";
 
 it('test products component', async () => {
-  const { debug } = await render(<Products products={data} />);
+  await render(<Products products={data} />);
   const cards = await screen.findAllByTestId("product-card");
   expect(cards).toHaveLength(8);
 });
 
 it("test search bar", async () => {
-  const { debug } = await render(<Products products={data} />);
+  await render(<Products products={data} />);
 
   // eslint-disable-next-line testing-library/no-node-access
   const SelectComponent = (await screen.findByTestId("select-component-wrapper")).firstChild;
