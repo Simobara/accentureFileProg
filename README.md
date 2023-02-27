@@ -49,6 +49,7 @@
 ## Dependencies
 * typescript 
 * npm i bootstrap
+* npm i reactstrap
 * npm i tailwind
 
 ## Usage
