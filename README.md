@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# E-Commerce Product Listing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ProjectName
+* commerce-product-listing[73][45][32][30]
 
-## Available Scripts
+## Form Validator (Intro Project)
+* React project based on requirements provided.
 
-In the project directory, you can run:
+## Project Specifications 
+* Build with MV* framework
+* Read data from Json
+* Responsive Layout
+* Display product image, name and price
+* Build dropdown filters for product type
+* Hide and show data depending on the dropdown filters
+* Show an indicator on the product if it is on sale.
+* Simple open text filter(search).
 
-### `npm start`
+## Other Requirements:
+* Page responsive
+* Git Hub repository and commit the work
+* Committing code step by step
+* Surround the code with unit tests for all logical functionalities.
+* Include a Readme how to use the repository.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ProjectAccenture - Typescript React (CRA) ##
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## First run
+1) Clone git repository (git clone "repository link")
+2) Run "npm install" in terminal (path should be in project location)
+3) After all installation, run "npm start"
+4) web browser automatically open the project. (If not just type "http://localhost:3000" in your browser)
 
-### `npm test`
+## Requirements
+* Node.js v14 or higher
+* npm or yarn package manager
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
+* Clone this repo ‘git clone’
+* npm install -g create-react-app
+* https://github.com/Simobara/AccentureProject.git
 
-### `npm run build`
+## How to use project
+- Default load all products using JSON array
+- If users want to filter products, they can do it by changing dropdown values in top right corner.
+- If have any sale products, it will show a red label.
+- Also, have search option in a dropdown.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Dependencies
+* typescript 
+* npm i bootstrap
+* npm i tailwind
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
+* Npm run start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Build the app (automatic)
+* npm run package
 
-### `npm run eject`
+## Build the app (manual)
+* npm run build
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Test the app (after npm run build || yarn run build)
+* npm run prod
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+* This project is released under the MIT License. @AllRightsReserved.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
+* SimoBara - simobara@hotmail.it

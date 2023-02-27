@@ -63,5 +63,6 @@ const data = [
         "type": "Cider"
     }
 ]
-
+const Product = data[0];
+export type ProductType = typeof Product;
 export default data;

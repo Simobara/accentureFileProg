@@ -1,11 +1,11 @@
 import './App.css';
 import Products from "./components/Products";
-import React from "react";
+import data from "./controller/data"
 // import { Container } from "reactstrap";
 
 function App() {
     return (
-      <Products />
+      <Products products={data}/>
     )
 }
 

@@ -1,6 +1,7 @@
-import React from 'react'
+import type { ProductType } from "../controller/data";
+import type { FC } from "react";
 
-const Products = () => {
+const Products: FC<{ products: ProductType[] }> = ({ products }) => {
     return (
         <div>
             PIPPO
