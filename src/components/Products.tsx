@@ -20,11 +20,11 @@ const Products: FC<{ products: ProductType[] }> = ({ products }) => {
     return(
     
     <>
-        <Row className="border-gray-600 border-[1px]">
+        <Row className="border-gray-600 border-[1px]" data-testid="product-component">
             <Col md={8} />
             <Col md={4} className="flex">
                 <Label className="px-2 w-24">Filter by: </Label>
-                <div className="w-full">
+                <div className="w-full" data-testid="select-component-wrapper">
                     <Select
                         onChange={onFilterHandler}
                         options={options}
@@ -38,7 +38,7 @@ const Products: FC<{ products: ProductType[] }> = ({ products }) => {
         <Row className='px-2 border-gray-600 border-[1px] rounded-md'>
             {
                 data.map((item, i) =>
-                    <Col lg={3} md={6} key={i}>
+                    <Col lg={3} md={6} key={i} data-testid="product-card">
                         <div className={'product-card'}>
                             {item.isSale && <Label className={'lbl-sale'}>Sale</Label>}
                             <img src={item.productImage} className={'img-product'} alt={'img-product'} />
