@@ -74,6 +74,10 @@ const products =  data.map(data => {
 const Product = products[0];
 export type ProductType = typeof Product;
 
-export const options = data.map(item => ({ label: item.type, value: item.productName }));
+const tmp = [...data.map(item => ({ label: item.type, value: item.productName })), { label: "all", value: "all"}];
+
+export const options = tmp.filter((tag, index, array) => array.findIndex(t => t.label === tag.label) === index);
+
+console.log(options);
 
 export default products;

@@ -5,16 +5,14 @@ import { options, ProductType } from "../controller/data";
 import type { FC } from "react";
 
 const Products: FC<{ products: ProductType[] }> = ({ products }) => {
-     // eslint-disable-next-line
-    const [tempData, setTempData] = useState(products)
 
     const [data, setData] = useState(products)
 
     const onFilterHandler = (e: any) => {
-        if (e.value === null) {
-            setData(tempData)
+        if (e.label === "*") {
+            setData(products)
         } else {
-            const found = tempData.filter(item => item.type === e.value)
+            const found = products.filter(item => item.type === e.label)
             if (found.length > 0) setData(found)
         }
     }
@@ -24,9 +22,9 @@ const Products: FC<{ products: ProductType[] }> = ({ products }) => {
     <>
         <Row className="border-gray-600 border-[1px]">
             <Col md={8} />
-            <Col md={4} className={'filter-form'}>
-                <Label>Filter by: </Label>
-                <div className={'cp-select'}>
+            <Col md={4} className="flex">
+                <Label className="px-2 w-24">Filter by: </Label>
+                <div className="w-full">
                     <Select
                         onChange={onFilterHandler}
                         options={options}
@@ -37,10 +35,10 @@ const Products: FC<{ products: ProductType[] }> = ({ products }) => {
             </Col>
         </Row>
 
-        <Row className={'product-section'}>
+        <Row className='px-2 border-gray-600 border-[1px] rounded-md'>
             {
                 data.map((item, i) =>
-                    <Col lg={3} md={6}>
+                    <Col lg={3} md={6} key={i}>
                         <div className={'product-card'}>
                             {item.isSale && <Label className={'lbl-sale'}>Sale</Label>}
                             <img src={item.productImage} className={'img-product'} alt={'img-product'} />
