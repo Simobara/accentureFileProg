@@ -1,0 +1,26 @@
+
+.filter-bar{
+    /* width: 300px;
+    left:0;
+    top:100px;
+    border:2px solid grey;
+    height: 100;
+    bottom:0;
+    z-index: 10; */
+    width: 100%;
+    margin-top: 150px;
+    max-width: 200px;
+    min-width: 200px;
+    }
+
+    .filter-bar__prices{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+    }
+    .filter-bar__prices button{
+
+        border:1px solid grey;
+        cursor: pointer;
+        padding:5px 10px;
+    }

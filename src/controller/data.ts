@@ -64,20 +64,18 @@ const data = [
     }
 ]
 
-const products =  data.map(data => {
-    return {
-        ...data,
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s'
-    }
-});
+// const products =  data.map(data => {
+//     return {
+//         ...data,
+//         desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s'
+//     }
+// });
 
-const Product = products[0];
+const Product = data[0];
 export type ProductType = typeof Product;
 
-const tmp = [...data.map(item => ({ label: item.type, value: item.productName })), { label: "All", value: "All"}];
+const tmp = [...data.map(item =>({ label: item.type, value: item.productName })), { label: "All", value: "All" }];
 
 export const options = tmp.filter((tag, index, array) => array.findIndex(t => t.label === tag.label) === index);
 
-
-
-export default products;
+export default data;

@@ -25,6 +25,9 @@
 
 ## ProjectAccenture - Typescript React (CRA) ##
 
+## Design Consideration
+* By having the website in place I considered to doing some research, and I found interesting the page of DanMurphy and Bws, so based on the requirements I decided to take inspiration about how developers create those landing pages, design and features to better improve my project.
+
 ## First run
 1) Clone git repository (git clone "repository link")
 2) Run "npm install" in terminal (path should be in project location)
