@@ -8,7 +8,6 @@ type Props = {
 }
 
 const FilterBar = ({ onPrice, onCategory }: Props) => {
-
     const categoryHandler = (event: any) => {
         if (event.target.checked) {
             onCategory(event.target.value)
@@ -30,7 +29,7 @@ const FilterBar = ({ onPrice, onCategory }: Props) => {
 
     return(
         
-            <div className='filter-bar h-400 mt-150 bg-zinc-100 overflow-y-scroll max-w-full max-h-full'>
+            <div className='filter-bar h-400 bg-zinc-100 overflow-y-scroll'>
                 SEARCH:
                 <div className='filter-bar__prices grid grid-cols-2 gap-3'>
                     <button onClick={() => onPrice(0,10)} className='border-slate-50 p-2'>Under $10</button>

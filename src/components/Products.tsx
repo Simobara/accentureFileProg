@@ -135,7 +135,7 @@ const Products: FC<{ products: ProductType[] }> = ({ products }) => {
                     </div>
                 </Col>
                 <Col md={6} xl={12} >
-                    <div className='top-0 right-0 w-auto p-auto mt-4 mb-0 '>
+                    <div className='top-0 right-0 w-full p-auto mt-4 mb-0 '>
                         <SearchBar onQuery={searchQueryHandler} />
                     </div>
                 </Col>
