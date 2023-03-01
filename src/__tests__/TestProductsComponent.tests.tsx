@@ -2,15 +2,31 @@ import React from 'react';
 import { render, screen, fireEvent} from '@testing-library/react';
 import Products from "../components/Products";
 import data, { ProductType } from "../controller/data";
-// import { describe } from 'node:test';
 
 
-// describe("products", () => {
+describe("products", () => {
   it('test products component', async () => {
   
-    render(<Products products={data} />);
+    render(<Products products={[
+      {
+        "index": 0,
+        "isSale": false,
+        "price": "$49.99",
+        "productImage": "https://www.firstchoiceliquor.com.au/-/media/images/products/generic_bundle.ashx?h=520&productId=4296791_CTN24",
+        "productName": "Pure Blonde Crate",
+        "type": "Beer"
+    },
+    {
+        "index": 1,
+        "isSale": true,
+        "price": "$14.99",
+        "productImage": "https://imagevault.skulibrary.com/ColesLiquor/NoPrefix/e2520ee2b408c79be0916bdd062e372f1423c031/images/2400/id/CLG-10016-0.jpg",
+        "productName": "Victoria Bitter 4x6x375ml",
+        "type": "Beer"
+    }
+    ]} />);
     const cards = await screen.findAllByTestId("product-card");
-    expect(cards).toHaveLength(8);
+    expect(cards).toHaveLength(2);
   });
   
   it("test search bar", async () => {
@@ -32,4 +48,4 @@ import data, { ProductType } from "../controller/data";
 })
 
 
-// })
+})
