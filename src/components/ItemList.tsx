@@ -6,7 +6,7 @@ import { ProductType } from "../controller/data";
 
 const ItemList:FC<{data:ProductType[]}> = ({ data } ) => {
     return (
-        <Row className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 sm:gap-10 lg:gap-8 xl:gap-8 w-full mx-auto max-w-[90%] mt-20 mb-4 border-0'>
+        <Row className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 sm:gap-10 lg:gap-8 xl:gap-8 w-full mx-auto  max-w-[90%] mt-20 mb-4 border-0'>
         {
                 data.map((item:any) =>
                     <Col lg={3} md={6} xs={9} key={item.index} data-testid="product-card">

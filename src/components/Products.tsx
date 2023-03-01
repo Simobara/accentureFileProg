@@ -114,17 +114,17 @@ const Products: FC<{ products: ProductType[] }> = ({ products }) => {
 
         <>
             <Header />
-            <Row className=" border-gray-800 border-[1px] flex fixed z-10 bg-slate-50 items-center justify-center   w-screen" data-testid="product-component ">
-                <Col md={6} xl={12}>
+            <Row className=" border-gray-800 border-[1px] flex fixed z-10 bg-slate-50 items-center justify-center w=-1/4 " data-testid="product-component ">
+                <Col sm={12 } md={4} xl={2}>
                     <div className="p-0 mt-4 mb-4 mr-8 font-bold text-gray-900" data-testid="select-component-wrapper">
                         SEARCH YOUR PRODUCT:
                     </div>
                 </Col>
-                <Col md={6} xl={12}>
+                <Col sm={12 } md={4} xl={2}>
                     {/* <Label className="px-2 w-24 mr-6">Menu </Label> */}
                     {/* <Label for="exampleInput" className="px-2 w-24 mr-6"></Label> */}
                     {/* <Input type="text" name="exampleInput" id="exampleInput" placeholder="Enter some text" /> */}
-                    <div className="mt-4 mb-4 font-bold text-gray-700" data-testid="select-component-wrapper">
+                    <div className="mt-4 mb-4 font-bold text-gray-800" data-testid="select-component-wrapper">
                         <Select
                             onChange={onFilterHandler}
                             options={options}
@@ -134,7 +134,7 @@ const Products: FC<{ products: ProductType[] }> = ({ products }) => {
                         />
                     </div>
                 </Col>
-                <Col md={6} xl={12} >
+                <Col md={4} xl={3} >
                     <div className='top-0 right-0 w-full p-auto mt-4 mb-0 '>
                         <SearchBar onQuery={searchQueryHandler} />
                     </div>

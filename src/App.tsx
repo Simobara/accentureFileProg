@@ -7,7 +7,7 @@ import { Container } from "reactstrap";
 
 function App() {
   return (
-      <Container>
+      <Container className="max-w-[100%] border-gray-800 ">
         <Products products={data } />
       </Container>
     )
