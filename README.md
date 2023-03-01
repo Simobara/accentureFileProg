@@ -27,6 +27,8 @@
 
 ## Design Consideration
 * By having the website in place I considered to doing some research, and I found interesting the page of DanMurphy and Bws, so based on the requirements I decided to take inspiration about how developers create those landing pages, design and features to better improve my project.
+* https://www.danmurphys.com.au/beer/price-0-10
+* https://bws.com.au/?utm_source=google&utm_medium=cpc&utm_campaign=Brand%20-%20Pure%20-%20Exact&utm_term=bws&e_cid=ps:ds:GOOGLE:Brand%20-%20Pure%20-%20Exact:Brand%20-%20Pure:ds_keywords%3Dds_kw:bws&gclid=CjwKCAiAjPyfBhBMEiwAB2CCItKCrtkK6hIQSL0rImS0dCB4GGuepDfrPnH86PV5Pvz0R9sh8zbEwhoC0P8QAvD_BwE&gclsrc=aw.ds
 
 ## First run
 1) Clone git repository (git clone "repository link")
@@ -40,8 +42,10 @@
 
 ## Installation
 * Clone this repo ‘git clone’
-* npm install -g create-react-app
+* npx create-react-app my-app
 * https://github.com/Simobara/AccentureProject.git
+* cd my-app
+* npm start
 
 ## How to use project
 - Default load all products using JSON array
