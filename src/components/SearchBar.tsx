@@ -14,7 +14,6 @@ const SearchBar = ({onQuery}:Props) => {
         const handleSearch = (event:any) => {
             event.preventDefault();
             onQuery(query);
-            // Do something with the search query (e.g. send it to a backend API)
         }
     
     return (

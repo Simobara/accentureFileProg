@@ -44,7 +44,6 @@ const Products: FC<{ products: ProductType[] }> = ({ products }) => {
                     <ItemList data={data} />
                 </Col>
             </Row>
-            {/* <Footer /> */}
         </>
     )
 }
