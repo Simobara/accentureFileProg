@@ -43,7 +43,7 @@
 ## Installation
 * Clone this repo ‘git clone’
 * npx create-react-app my-app
-* https://github.com/Simobara/AccentureProject.git
+* https://github.com/Simobara/accentureFileProg.git
 * cd my-app
 * npm start
 
